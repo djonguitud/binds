@@ -1,0 +1,34 @@
+/* 
+   Estilos principales para el proyecto Binds
+   Autor: Diego Jonguitud Galindo
+   Versión: 1.0
+   Fecha: 2023-12-27 00:05 A.M.
+*/
+
+/* Tipografía */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: black;
+}
+
+/* Diseño */
+.main_container {
+    width: 80%;
+    margin: 0 auto;
+    background-color:blueviolet;
+}
+
+/* Colores */
+.primary-color {
+    color: #3498db;
+}
+
+/* Enlaces */
+a {
+    color: #3498db;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
