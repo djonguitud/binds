@@ -12,24 +12,25 @@
 
 /* Tipografía */
 body {
-    font-family: 'Arial', sans-serif;
+    font-family: 'Montserrat','Arial', sans-serif;
     background-color: var(--background-color);
 }
 
 /* Diseño */
 .main_container {
-    max-width: 1200px;
+    width: 100vw;
     margin: 0 auto;
     background-color: var(--secondary-color);
     display: grid;
-    grid-template-columns: 1fr; /* Una columna */
+    grid-template-columns: 1fr;
     grid-template-areas:
-                "nav"
-                "slogan"
-                "aside"
-                "footer";
+        "nav"
+        "slogan"
+        "aside"
+        "footer";
     min-height: 100vh;
     place-items: center;
+
 
 }
 
@@ -37,16 +38,17 @@ body {
 
 nav {
     color: white;
-    flex-grow: 1; /* El menú ocupará todo el espacio disponible */
-    min-width: 50%;
-    max-width: 70%;
     grid-area: nav;
     display: flex;
     justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    align-self: first baseline;   
 }
 
 .logo {
-    max-width: 200px; /* Establecer el ancho máximo del logo */
+    max-width: 100px; /* Establecer el ancho máximo del logo */
+    margin: 20px 0 20px 0;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -57,11 +59,14 @@ nav {
 
 nav ul {
     list-style: none;
+    width: 20%;
     padding: 0;
     margin: 0;
     display: flex;
+    justify-content: center;
     align-items: center;
-    justify-content: center; /* Centrar horizontalmente los elementos */
+    
+    
 }
 
 nav li {
@@ -81,16 +86,6 @@ nav a {
     font-size: 14px;
 }
 
-.boton-especial {
-    background-color: #4CAF50;
-    color: white;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 14px;
-    margin: 10px;
-}
 
 /* Slogan Section */
 
