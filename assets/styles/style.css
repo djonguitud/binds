@@ -5,17 +5,22 @@
    Fecha: 2023-12-27 00:05 A.M.
 */
 
+:root {
+    --background-color: #191919;
+    --secondary-color: #362FD9;
+}
+
 /* Tipografía */
 body {
     font-family: 'Arial', sans-serif;
-    background-color: black;
+    background-color: var(--background-color);
 }
 
 /* Diseño */
 .main_container {
     width: 80%;
     margin: 0 auto;
-    background-color:blueviolet;
+    background-color: var(--secondary-color);
 }
 
 /* Colores */
