@@ -18,10 +18,76 @@ body {
 
 /* Diseño */
 .main_container {
-    width: 80%;
+    max-width: 1200px;
     margin: 0 auto;
     background-color: var(--secondary-color);
+    display: flex;
+    justify-content: center;
+    
+
 }
+
+/* Nav Bar*/
+
+nav {
+    color: white;
+    flex-grow: 1; /* El menú ocupará todo el espacio disponible */
+    min-width: 50%;
+    max-width: 70%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.logo {
+    max-width: 200px; /* Establecer el ancho máximo del logo */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: Helvetica, Arial, sans-serif;
+    font-weight: 500;
+    font-size: 30px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Centrar horizontalmente los elementos */
+}
+
+nav li {
+    padding: 15px;
+    text-align: center;
+    
+}
+
+nav li:last-child {
+    border-right: none; /* No aplicar línea divisoria al último elemento */
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.boton-especial {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    margin: 10px;
+}
+
+
+
+
 
 /* Colores */
 .primary-color {
