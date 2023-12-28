@@ -21,10 +21,15 @@ body {
     max-width: 1200px;
     margin: 0 auto;
     background-color: var(--secondary-color);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    
+    display: grid;
+    grid-template-columns: 1fr; /* Una columna */
+    grid-template-areas:
+                "nav"
+                "slogan"
+                "aside"
+                "footer";
+    min-height: 100vh;
+    place-items: center;
 
 }
 
@@ -35,6 +40,7 @@ nav {
     flex-grow: 1; /* El menú ocupará todo el espacio disponible */
     min-width: 50%;
     max-width: 70%;
+    grid-area: nav;
     display: flex;
     justify-content: space-evenly;
 }
@@ -86,16 +92,33 @@ nav a {
     margin: 10px;
 }
 
+/* Slogan Section */
 
+.slogan {
+    grid-area: slogan;
+}
 
+/* Aside */
 
+aside {
+    grid-area: sidebar;
+
+}
+
+/* Footer */
+
+footer {
+    grid-area: footer;
+}
 
 /* Colores */
+
 .primary-color {
     color: #3498db;
 }
 
 /* Enlaces */
+
 a {
     color: #3498db;
     text-decoration: none;
