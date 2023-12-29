@@ -112,22 +112,14 @@ nav a:hover::before {
 
 .hero {
     grid-area: slogan;
-    display: flex;
     width: 80%;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 60px;
-  
-    padding: 10px;
-
+    
 }
 
 .slogan {
     width: 50%;
-    height: 100%;
     text-align: left;
-    
-    
+
 }
 
 .slogan h2 {
@@ -148,7 +140,6 @@ nav a:hover::before {
     max-width: 100%;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-    
 
 }
 
