@@ -6,9 +6,10 @@
 */
 
 :root {
-    --background-color: #1e1b18;
+    --background-color: #010a07;
     --secondary-color: #FFFAFF;
-    --font-color: #1e1b18;
+    --font-color: #ffffff;
+    
 }
 
 body {
@@ -21,7 +22,6 @@ body {
 .main_container {
     width: 100vw;
     margin: 0 auto;
-    background-color: var(--secondary-color);
     display: grid;
     grid-template-columns: 1fr;
     grid-template-areas:
@@ -31,6 +31,7 @@ body {
         "footer";
     min-height: 100vh;
     place-items: center;
+    background-image: radial-gradient(circle, rgba(0, 66, 170, 1) 0%, rgba(1, 10, 7, 1) 35%);
 
 
 }
@@ -111,6 +112,7 @@ nav a:hover::before {
 /* Slogan Section */
 
 .hero {
+    
     grid-area: slogan;
     width: 80%;
     
