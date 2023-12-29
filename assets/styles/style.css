@@ -12,6 +12,11 @@
     
 }
 
+h1, h2, h3, p {
+    font-size: 1em; /* Tamaño relativo al tamaño base */
+    margin-bottom: 10px; /* Espacio entre elementos */
+  }
+
 body {
     font-family: 'Montserrat','Arial', sans-serif;
     color: var(--font-color);
@@ -112,35 +117,41 @@ nav a:hover::before {
 /* Slogan Section */
 
 .hero {
-    
-    grid-area: slogan;
     display: flex;
-    width: 80%;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-bottom: 60px;
-  
-    padding: 10px;
-
+    gap: 50px;
+    grid-area: slogan;
+    width: 80%;
+    
 }
 
 .slogan {
     width: 50%;
-    height: 100%;
-    text-align: left;
-    
-    
+    text-align: center;
+
 }
 
-.slogan h2 {
+.slogan h1 {
     font-size: 3rem;
     font-weight: 500;
 }
 
-.slogan p {
-    font-size: 2rem;
-    font-weight: 100;
-}
+.btn-ver-planes {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-top: 20px;
+    background-color: #2cada4;
+    color: #000000;
+    text-decoration: none !important;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .btn-ver-planes:hover {
+    background-color: #0056b3;
+  }
 
 .hero-img {
     max-width: 50%;
@@ -150,7 +161,6 @@ nav a:hover::before {
     max-width: 100%;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-    
 
 }
 
