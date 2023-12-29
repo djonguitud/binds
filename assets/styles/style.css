@@ -6,13 +6,14 @@
 */
 
 :root {
-    --background-color: #191919;
-    --secondary-color: #362FD9;
+    --background-color: #1e1b18;
+    --secondary-color: #FFFAFF;
+    --font-color: #1e1b18;
 }
 
-/* Tipografía */
 body {
     font-family: 'Montserrat','Arial', sans-serif;
+    color: var(--font-color);
     background-color: var(--background-color);
 }
 
@@ -37,55 +38,73 @@ body {
 /* Nav Bar*/
 
 nav {
-    color: white;
+    color: var(--font-color);
     grid-area: nav;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: center;
-    width: 100%;
-    align-self: first baseline;   
+    width: 80%;
+    align-self: first baseline; 
+    border-bottom: solid 1px rgba(0, 0, 0, 0.485);
 }
 
-.logo {
+.logo-box {
     max-width: 100px; /* Establecer el ancho máximo del logo */
     margin: 20px 0 20px 0;
     display: flex;
     align-items: center;
     justify-content: center;
-    font-family: Helvetica, Arial, sans-serif;
-    font-weight: 500;
-    font-size: 30px;
+    height: 50px;
 }
+
+#id {
+    max-width: 100%;
+}
+
+
 
 nav ul {
     list-style: none;
-    width: 20%;
     padding: 0;
     margin: 0;
     display: flex;
     justify-content: center;
     align-items: center;
-    
-    
 }
 
 nav li {
+    color: var(--font-color);
     padding: 15px;
     text-align: center;
     
 }
 
 nav li:last-child {
-    border-right: none; /* No aplicar línea divisoria al último elemento */
+    border-right: none; 
 }
 
 nav a {
-    text-decoration: none;
-    color: white;
+    position: relative;
+    text-decoration: none !important;
+    color: var(--font-color);
     font-weight: bold;
     font-size: 14px;
 }
 
+nav a::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0; 
+    height: 1px; 
+    background-color: var(--background-color); 
+    transition: width 0.5s; 
+  }
+
+nav a:hover::before {
+    width: 100%; 
+  }
 
 /* Slogan Section */
 
