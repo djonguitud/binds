@@ -31,9 +31,9 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-image: radial-gradient(circle, rgba(0, 66, 170, 1) 0%, rgba(1, 10, 7, 1) 35%);
-
-
+    background-image: radial-gradient(circle, rgba(0, 66, 170, 1) 0%, rgba(1, 10, 7, 1) 50%);
+    background-position: 0%;
+    background-repeat: no-repeat;
 }
 
 /* Nav Bar*/
@@ -114,44 +114,59 @@ nav a:hover::before {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 50px;
     width: 80%;
     
 }
 
 .slogan {
-    width: 50%;
-    text-align: center;
+  width: 50%;
+  text-align: center;
 
 }
 
 .slogan h1 {
     font-size: 3rem;
     font-weight: 500;
+    margin-bottom: 10px;
+
 }
 
-.btn-ver-planes {
-    display: inline-block;
-    padding: 10px 20px;
-    margin-top: 20px;
-    background-color: #2cada4;
-    color: #000000;
-    text-decoration: none !important;
-    border-radius: 5px;
-    transition: background-color 0.3s ease;
-  }
-  
-  .btn-ver-planes:hover {
-    background-color: #0056b3;
-  }
+#hero-button {
+  padding: 1.3em 3em;
+  font-size: 12px;
+  text-decoration: none !important;
+  text-transform: uppercase;
+  letter-spacing: 2.5px;
+  font-weight: 500;
+  color: #000;
+  background-color: #23c483;
+  border: none;
+  border-radius: 45px;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease 0s;
+  cursor: pointer;
+  outline: none;
+}
+
+#hero-button:hover {
+  background-color: #fff;
+  box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);
+  color: #000;
+  transform: translateY(-7px);
+}
+
+#hero-button:active {
+  transform: translateY(-1px);
+}
 
 .hero-img {
-    max-width: 50%;
+    max-width: 70%;
+    margin-top: 30px;
 }
 
 #webpage {
     max-width: 100%;
-    border-radius: 10px;
+    border-radius: 30px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 
 }
@@ -162,21 +177,20 @@ nav a:hover::before {
 
 .planes {
     display: flex;
-    justify-content: space-between;
-    
+    justify-content: space-evenly;
     padding: 50px;
-    
+    width: 60%;
   }
   
   .plan {
-    flex: 1;
     background-color: #2cada42f;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     text-align: center;
-    padding: 30px;
+    padding: 10px 0 30px 0;
     margin-left: 20px;
     transition: transform 0.3s ease;
+    width: 25%;
   }
   
   .plan:hover {
@@ -197,21 +211,47 @@ nav a:hover::before {
     font-weight: 100;
   }
   
-  
-  button {
+  .buy-button {
+    appearance: none;
+    background-color: #23c483;
+    border: 0.125em solid #1A1A1A;
+    border-radius: 25px;
+    box-sizing: border-box;
+    color: #3B3B3B;
+    cursor: pointer;
     display: inline-block;
-    padding: 10px 20px;
-    margin-top: 20px;
-    background-color: #2cada4;
-    color: #000000;
-    text-decoration: none !important;
-    border-radius: 5px;
-    transition: background-color 0.3s ease;
-  }
-  
-  button:hover {
-    background-color: #0056b3;
-  }
+    font-size: .5;
+    font-weight: 600;
+    line-height: normal;
+    margin: 0;
+    min-height: 3.75em;
+    outline: none;
+    padding: 1em 2.3em;
+    text-align: center;
+    text-decoration: none;
+    transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    will-change: transform;
+    margin-top: 30px;
+   }
+   
+   .buy-button:disabled {
+    pointer-events: none;
+   }
+   
+   .buy-button:hover {
+    color: #fff;
+    background-color: #1A1A1A;
+    box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+    transform: translateY(-2px);
+   }
+   
+   .buy-button:active {
+    box-shadow: none;
+    transform: translateY(0);
+   }
 
 /* Footer */
 
